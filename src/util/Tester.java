@@ -5,6 +5,7 @@ package util;
 
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import beans.Shape;
@@ -27,7 +28,9 @@ public class Tester {
 		Shape newShape = (Shape) ctx.getBean("beanOne");
 		
 		newShape.showDate();
-
+		
+		((AbstractApplicationContext) ctx).close();
+		
 	}
 
 }

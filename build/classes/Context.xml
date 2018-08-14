@@ -12,6 +12,6 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 		
 		
-	<beans:bean name="newBean" id="beanOne" class="beans.Shape" scope="singleton" ></beans:bean>
+	<beans:bean name="newBean" id="beanOne" class="beans.Shape" scope="singleton"  init-method="customInit" destroy-method="customDestroy"></beans:bean>
 	
 </beans:beans>
