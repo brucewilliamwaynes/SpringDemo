@@ -34,6 +34,9 @@
 
     </beans:bean>
 
+
+    <!--
+
     <beans:bean id="ans1" class="com.training.model.Answer">
         <beans:constructor-arg value="1"></beans:constructor-arg>
         <beans:constructor-arg value="Java is a programming language"></beans:constructor-arg>
@@ -55,6 +58,40 @@
                 <beans:ref bean="ans1"></beans:ref>
                 <beans:ref bean="ans2"></beans:ref>
             </beans:list>
+        </beans:constructor-arg>
+    </beans:bean>
+    -->
+
+    <beans:bean id="answer1" class="com.training.model.Answer">
+        <beans:constructor-arg value="1"></beans:constructor-arg>
+        <beans:constructor-arg value="Java is a Programming Language"></beans:constructor-arg>
+        <beans:constructor-arg value="12/12/2001"></beans:constructor-arg>
+    </beans:bean>
+    <beans:bean id="answer2" class="com.training.model.Answer">
+        <beans:constructor-arg value="2"></beans:constructor-arg>
+        <beans:constructor-arg value="Java is a Platform"></beans:constructor-arg>
+        <beans:constructor-arg value="12/12/2003"></beans:constructor-arg>
+    </beans:bean>
+
+    <beans:bean id="user1" class="com.training.model.User">
+        <beans:constructor-arg value="1"></beans:constructor-arg>
+        <beans:constructor-arg value="Arun Kumar"></beans:constructor-arg>
+        <beans:constructor-arg value="arun@gmail.com"></beans:constructor-arg>
+    </beans:bean>
+    <beans:bean id="user2" class="com.training.model.User">
+        <beans:constructor-arg value="2"></beans:constructor-arg>
+        <beans:constructor-arg value="Varun Kumar"></beans:constructor-arg>
+        <beans:constructor-arg value="Varun@gmail.com"></beans:constructor-arg>
+    </beans:bean>
+
+    <beans:bean id="ques2" class="com.training.model.Question">
+        <beans:constructor-arg value="1"></beans:constructor-arg>
+        <beans:constructor-arg value="What is Java?"></beans:constructor-arg>
+        <beans:constructor-arg>
+            <beans:map>
+                <beans:entry key-ref="answer1" value-ref="user1"></beans:entry>
+                <beans:entry key-ref="answer2" value-ref="user2"></beans:entry>
+            </beans:map>
         </beans:constructor-arg>
     </beans:bean>
 

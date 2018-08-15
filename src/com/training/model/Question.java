@@ -1,19 +1,21 @@
 package com.training.model;
 
 import java.util.Iterator;
-import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class Question {
 
     private int id;
     private String name;
-    private List< Answer > answers;
+//    private List< Answer > answers;
+    private Map<Answer,User> answers;
 
     public Question() {
 
 
     }
-    public Question(int id, String name, List< Answer > answers) {
+    public Question(int id, String name, Map< Answer, User > answers) {
 
         super();
 
@@ -27,17 +29,31 @@ public class Question {
 
     public void displayInfo(){
 
-        System.out.println( "Hi " + name);
+        System.out.println("question id:"+id);
 
-        System.out.println( "Your id :" + id);
+        System.out.println("question name:"+name);
 
-        System.out.println(" Answers are: ");
+        System.out.println("Answers....");
 
-        Iterator< Answer > itr=answers.iterator();
+        Set<Map.Entry<Answer, User>> set=answers.entrySet();
+
+        Iterator<Map.Entry<Answer, User>> itr=set.iterator();
 
         while(itr.hasNext()){
 
-            System.out.println(itr.next());
+            Map.Entry<Answer, User> entry=itr.next();
+
+            Answer ans=entry.getKey();
+
+            User user=entry.getValue();
+
+            System.out.println("Answer Information:");
+
+            System.out.println(ans);
+
+            System.out.println("Posted By:");
+
+            System.out.println(user);
 
         }
 

@@ -38,7 +38,7 @@ public class Tester {
 		*/
 
 		//Creating and testing for Question And List type for Constructor
-		Question ques = ( Question ) ctx.getBean( "ques1" );
+		Question ques = ( Question ) ctx.getBean( "ques2" );
 
 		ques.displayInfo();
 
