@@ -4,7 +4,7 @@
 package util;
 
 
-import com.training.model.Employee;
+import com.training.model.Question;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -29,12 +29,18 @@ public class Tester {
 		newShape.showDate();
 		
 		((AbstractApplicationContext) ctx).close();
-		*/
+
 
 		//Creating and Testing for Employee and Address
 		Employee emp = (Employee) ctx.getBean("emp1");
 
 		emp.show();
+		*/
+
+		//Creating and testing for Question And List type for Constructor
+		Question ques = ( Question ) ctx.getBean( "ques1" );
+
+		ques.displayInfo();
 
 	}
 

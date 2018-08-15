@@ -34,4 +34,17 @@
 
     </beans:bean>
 
+    <beans:bean id="ques1" class="com.training.model.Question">
+        <beans:constructor-arg value="1"></beans:constructor-arg>
+        <beans:constructor-arg value="What is JAVA?"></beans:constructor-arg>
+        <beans:constructor-arg>
+            <beans:list>
+                <beans:value>JAVA is a programming language</beans:value>
+                <beans:value>JAVA is a Platform</beans:value>
+                <beans:value>JAVA is Gonna RULE THE WORLD</beans:value>
+            </beans:list>
+        </beans:constructor-arg>
+    </beans:bean>
+
+
 </beans:beans>
