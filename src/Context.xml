@@ -5,7 +5,8 @@
 	xmlns:beans="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:aop = "http://www.springframework.org/schema/aop"
-	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		 http://www.springframework.org/schema/aop 
    		http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
@@ -13,7 +14,8 @@
 		
 		
 	<beans:bean name="newBean" id="beanOne" class="beans.Shape" scope="singleton"  init-method="customInit" destroy-method="customDestroy">
-	
+	<beans:constructor-arg value="Anirban"></beans:constructor-arg>
+		<beans:property name="curDate" value ="" ></beans:property>
 	</beans:bean>
 	
 </beans:beans>
