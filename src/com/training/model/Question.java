@@ -7,13 +7,13 @@ public class Question {
 
     private int id;
     private String name;
-    private List<String> answers;
+    private List< Answer > answers;
 
     public Question() {
 
 
     }
-    public Question(int id, String name, List<String> answers) {
+    public Question(int id, String name, List< Answer > answers) {
 
         super();
 
@@ -33,7 +33,7 @@ public class Question {
 
         System.out.println(" Answers are: ");
 
-        Iterator<String> itr=answers.iterator();
+        Iterator< Answer > itr=answers.iterator();
 
         while(itr.hasNext()){
 

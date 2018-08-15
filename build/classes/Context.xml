@@ -34,14 +34,26 @@
 
     </beans:bean>
 
+    <beans:bean id="ans1" class="com.training.model.Answer">
+        <beans:constructor-arg value="1"></beans:constructor-arg>
+        <beans:constructor-arg value="Java is a programming language"></beans:constructor-arg>
+        <beans:constructor-arg value="John"></beans:constructor-arg>
+    </beans:bean>
+
+    <beans:bean id="ans2" class="com.training.model.Answer">
+        <beans:constructor-arg value="2"></beans:constructor-arg>
+        <beans:constructor-arg value="Java is a Platform"></beans:constructor-arg>
+        <beans:constructor-arg value="Ravi"></beans:constructor-arg>
+    </beans:bean>
+
+
     <beans:bean id="ques1" class="com.training.model.Question">
         <beans:constructor-arg value="1"></beans:constructor-arg>
         <beans:constructor-arg value="What is JAVA?"></beans:constructor-arg>
         <beans:constructor-arg>
             <beans:list>
-                <beans:value>JAVA is a programming language</beans:value>
-                <beans:value>JAVA is a Platform</beans:value>
-                <beans:value>JAVA is Gonna RULE THE WORLD</beans:value>
+                <beans:ref bean="ans1"></beans:ref>
+                <beans:ref bean="ans2"></beans:ref>
             </beans:list>
         </beans:constructor-arg>
     </beans:bean>
