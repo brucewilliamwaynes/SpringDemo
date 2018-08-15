@@ -17,5 +17,21 @@
 	<beans:constructor-arg value="Anirban"></beans:constructor-arg>
 		<beans:property name="curDate" value ="" ></beans:property>
 	</beans:bean>
-	
+
+    <beans:bean id="add1" class="com.training.model.Address">
+        <beans:constructor-arg value="Hyderabad"></beans:constructor-arg>
+        <beans:constructor-arg value="Telangana"></beans:constructor-arg>
+        <beans:constructor-arg value="India"></beans:constructor-arg>
+    </beans:bean>
+
+    <beans:bean id="emp1" class="com.training.model.Employee">
+        <beans:constructor-arg value="1"></beans:constructor-arg>
+        <beans:constructor-arg value="Anirban Mukherjee"></beans:constructor-arg>
+        <beans:constructor-arg>
+            <beans:ref bean="add1"></beans:ref>
+        </beans:constructor-arg>
+
+
+    </beans:bean>
+
 </beans:beans>
