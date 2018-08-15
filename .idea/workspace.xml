@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b90ff0dc-42e6-41ea-9c76-c9098b67f32e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/Context.xml" afterPath="$PROJECT_DIR$/src/Context.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/training/model/Answer.java" afterPath="$PROJECT_DIR$/src/com/training/model/Answer.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/training/model/Question.java" afterPath="$PROJECT_DIR$/src/com/training/model/Question.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/training/model/User.java" afterPath="$PROJECT_DIR$/src/com/training/model/User.java" />
       <change beforePath="$PROJECT_DIR$/src/util/Tester.java" afterPath="$PROJECT_DIR$/src/util/Tester.java" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -21,16 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".classpath" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.classpath">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Shape.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beans/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,11 +29,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tester.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/util/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+            <state relative-caret-position="250">
+              <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/training/model/com/training/test/Dos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Uno.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/training/model/com/training/test/Uno.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -120,11 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Context.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Context.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="120" column="17" lean-forward="true" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
+            <state relative-caret-position="345">
+              <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -175,11 +183,13 @@
         <option value="$PROJECT_DIR$/src/beans/Shape.java" />
         <option value="$PROJECT_DIR$/src/com/training/model/Address.java" />
         <option value="$PROJECT_DIR$/src/com/training/model/Employee.java" />
-        <option value="$PROJECT_DIR$/src/Context.xml" />
-        <option value="$PROJECT_DIR$/src/util/Tester.java" />
         <option value="$PROJECT_DIR$/src/com/training/model/Question.java" />
         <option value="$PROJECT_DIR$/src/com/training/model/Answer.java" />
         <option value="$PROJECT_DIR$/src/com/training/model/User.java" />
+        <option value="$PROJECT_DIR$/src/Context.xml" />
+        <option value="$PROJECT_DIR$/src/com/training/model/com/training/test/Dos.java" />
+        <option value="$PROJECT_DIR$/src/util/Tester.java" />
+        <option value="$PROJECT_DIR$/src/com/training/model/com/training/test/Uno.java" />
       </list>
     </option>
   </component>
@@ -223,7 +233,26 @@
               <item name="SpringDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringDemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -480,14 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="120" column="17" lean-forward="true" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/training/model/Question.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -551,10 +572,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/training/model/com/training/test/Dos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/Tester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+        <state relative-caret-position="250">
+          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/training/model/com/training/test/Uno.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding />
         </state>
       </provider>

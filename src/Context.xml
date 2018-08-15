@@ -97,7 +97,7 @@
     </beans:bean>
     -->
 
-
+    <!--
     <beans:bean id="answer1" class="com.training.model.Answer">
         <beans:property  name="id" value="1"></beans:property>
         <beans:property name="answer" value="Java is a Programming Language"></beans:property>
@@ -130,5 +130,9 @@
             </beans:map>
         </beans:property>
     </beans:bean>
+    -->
+
+    <beans:bean id="dos" class="com.training.model.com.training.test.Dos"></beans:bean>
+    <beans:bean id="uno" class="com.training.model.com.training.test.Uno" autowire="byName" ></beans:bean>
 
 </beans:beans>

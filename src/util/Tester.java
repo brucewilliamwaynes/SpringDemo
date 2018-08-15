@@ -4,7 +4,7 @@
 package util;
 
 
-import com.training.model.Question;
+import com.training.model.com.training.test.Uno;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -44,13 +44,18 @@ public class Tester {
 		//Parent and Calling Child
 		Employee emp = (Employee)ctx.getBean("emp2");
 		emp.show();
-		*/
+
 
 		//Map with SI Implementation in XML
 		Question ques = (Question) ctx.getBean("ques2");
 
 		ques.displayInfo();
+		*/
 
+		//Autowiring Example
+		Uno uno = ctx.getBean("uno", Uno.class);
+
+		uno.display();
 
 	}
 
