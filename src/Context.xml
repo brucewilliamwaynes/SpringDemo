@@ -132,7 +132,24 @@
     </beans:bean>
     -->
 
+    <!--
     <beans:bean id="dos" class="com.training.model.com.training.test.Dos"></beans:bean>
     <beans:bean id="uno" class="com.training.model.com.training.test.Uno" autowire="byName" ></beans:bean>
+    -->
+
+    <beans:bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <beans:property name="driverClassName" value="" />
+        <beans:property name="url" value="" />
+        <beans:property name="username" value="" />
+        <beans:property name="password" value="" />
+    </beans:bean>
+
+    <beans:bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <beans:property name="dataSource" ref="ds"></beans:property>
+    </beans:bean>
+
+    <beans:bean id="empdao" class="com.JDBCSpring.EmployeeDao">
+        <beans:property name="jdbcTemplate" ref="jdbcTemplate"></beans:property>
+    </beans:bean>
 
 </beans:beans>

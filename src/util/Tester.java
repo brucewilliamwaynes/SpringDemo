@@ -4,7 +4,8 @@
 package util;
 
 
-import com.training.model.com.training.test.Uno;
+import com.JDBCSpring.Employee;
+import com.JDBCSpring.EmployeeDao;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -50,12 +51,20 @@ public class Tester {
 		Question ques = (Question) ctx.getBean("ques2");
 
 		ques.displayInfo();
-		*/
+
 
 		//Autowiring Example
 		Uno uno = ctx.getBean("uno", Uno.class);
 
 		uno.display();
+		*/
+
+		//Working with JDBCSpringTemplate but need connection to database
+		EmployeeDao dao = (EmployeeDao) ctx.getBean("empdao");
+
+		int status=dao.saveEmployee(new Employee(102,"Amit",35000));
+
+		System.out.println(status);
 
 	}
 
