@@ -36,4 +36,29 @@ public class EmployeeDao {
 
     }
 
+
+    /*
+
+    public Boolean saveEmployeeByPreparedStatement(Employee emp){
+
+    String query="insert into employee values(?,?,?)";
+
+    return jdbcTemplate.execute(query,new PreparedStatementCallback<Boolean>(){
+
+    @Override
+    public Boolean doInPreparedStatement(PreparedStatement ps)throws SQLException, DataAccessException {
+
+        ps.setInt(1,emp.getId());
+
+        ps.setString(2,emp.getName());
+
+        ps.setFloat(3,emp.getSalary());
+
+        return ps.execute();
+
+    }
+    });
+    }
+     */
+
 }

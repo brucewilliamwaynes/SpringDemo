@@ -66,6 +66,8 @@ public class Tester {
 
 		System.out.println(status);
 
+//		dao.saveEmployeeByPreparedStatement(new Employee(108,"Amit",35000));
+
 	}
 
 }
