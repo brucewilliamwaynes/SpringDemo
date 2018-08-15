@@ -4,7 +4,7 @@
 package util;
 
 
-import com.training.model.Employee;
+import com.training.model.Question;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -40,11 +40,17 @@ public class Tester {
 		Question ques = ( Question ) ctx.getBean( "ques2" );
 
 		ques.displayInfo();
-		*/
 
 		//Parent and Calling Child
 		Employee emp = (Employee)ctx.getBean("emp2");
 		emp.show();
+		*/
+
+		//Map with SI Implementation in XML
+		Question ques = (Question) ctx.getBean("ques2");
+
+		ques.displayInfo();
+
 
 	}
 

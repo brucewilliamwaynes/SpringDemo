@@ -12,7 +12,7 @@
    		http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 		
-		
+	<!--
 	<beans:bean name="newBean" id="beanOne" class="beans.Shape" scope="singleton"  init-method="customInit" destroy-method="customDestroy">
 	<beans:constructor-arg value="Anirban"></beans:constructor-arg>
 		<beans:property name="curDate" value ="" ></beans:property>
@@ -34,6 +34,7 @@
             <beans:ref bean="add1"></beans:ref>
         </beans:constructor-arg>
     </beans:bean>
+    -->
 
     <!--
 
@@ -95,5 +96,39 @@
         </beans:constructor-arg>
     </beans:bean>
     -->
+
+
+    <beans:bean id="answer1" class="com.training.model.Answer">
+        <beans:property  name="id" value="1"></beans:property>
+        <beans:property name="answer" value="Java is a Programming Language"></beans:property>
+        <beans:property name="postedDate" value="12/12/2001"></beans:property>
+    </beans:bean>
+    <beans:bean id="answer2" class="com.training.model.Answer">
+        <beans:property name="id" value="2"></beans:property>
+        <beans:property name="answer" value="Java is a Platform"></beans:property>
+        <beans:property name="postedDate" value="12/12/2003"></beans:property>
+    </beans:bean>
+
+    <beans:bean id="user1" class="com.training.model.User">
+        <beans:property name="id" value="1"></beans:property>
+        <beans:property name="name" value="Arun Kumar"></beans:property>
+        <beans:property name="email" value="arun@gmail.com"></beans:property>
+    </beans:bean>
+    <beans:bean id="user2" class="com.training.model.User">
+        <beans:property name="id" value="2"></beans:property>
+        <beans:property name="name" value="Varun Kumar"></beans:property>
+        <beans:property name="email" value="Varun@gmail.com"></beans:property>
+    </beans:bean>
+
+    <beans:bean id="ques2" class="com.training.model.Question">
+        <beans:property name="id" value="1"></beans:property>
+        <beans:property name="name" value="What is Java?"></beans:property>
+        <beans:property name="answers">
+            <beans:map>
+                <beans:entry key-ref="answer1" value-ref="user1"></beans:entry>
+                <beans:entry key-ref="answer2" value-ref="user2"></beans:entry>
+            </beans:map>
+        </beans:property>
+    </beans:bean>
 
 </beans:beans>
