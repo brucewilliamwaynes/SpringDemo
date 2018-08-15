@@ -17,13 +17,18 @@ public class Employee {
         this.id = id;
 
     }
+    */
 
-    public Employee(String name) {
+    public Employee(int id, String name) {
+
+        super();
+
+        this.id = id;
 
         this.name = name;
 
     }
-    */
+
 
     public Employee(int id, String name, Address address) {
 
