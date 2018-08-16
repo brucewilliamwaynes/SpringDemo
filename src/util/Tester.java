@@ -57,7 +57,7 @@ public class Tester {
 		Uno uno = ctx.getBean("uno", Uno.class);
 
 		uno.display();
-		*/
+
 
 		//Working with JDBCSpringTemplate but need connection to database
 		EmployeeDao dao = (EmployeeDao) ctx.getBean("empdao");
@@ -66,7 +66,11 @@ public class Tester {
 
 		System.out.println(status);
 
-//		dao.saveEmployeeByPreparedStatement(new Employee(108,"Amit",35000));
+        */
+        //Prepared Statement Using Spring JDBCTemplate
+        EmployeeDao dao = (EmployeeDao) ctx.getBean("empdao");
+
+		dao.saveEmployeeByPreparedStatement(new Employee(108,"Anirban",35000));
 
 	}
 
